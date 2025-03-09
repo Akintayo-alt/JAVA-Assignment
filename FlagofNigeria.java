@@ -9,16 +9,24 @@ public class FlagofNigeria  {
         }
 
         // TO PRINT OUT THE NIGERIA FLAG USING A NESTED FOR LOOP
-        for (int i = 1; i <= 4; i++){
-            for (int j = 1; j <= 12; j++){
-                if (j==5 || j==6 || j==7 || j==8){
-                    System.out.print("= ");
-                } else {
-                    System.out.print("* ");
+           
+       
+      
+        for(int i=0; i<rows; i++){       
+            for(int j= 0; j<columns; j++){
+                if (j<4) {  
+                    System.out.print("*");
+                }else if(j>=4 && j<8) {  
+                    System.out.print("=");
+                }else{   //last 4 columns
+                    System.out.print("*");
                 }
             }
-            System.out.print("\n");
+            System.out.println();  //move to the next row
         }
+    }
+    
+}
 
 
 
